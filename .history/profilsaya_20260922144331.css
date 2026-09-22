@@ -1,0 +1,80 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: #F8EDED; /* Warna latar belakang gelap modern */
+    color: #F8EDED;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+/* Kontainer Kartu Profil */
+.kartu {
+    background-color: #F8EDED;
+    border: 3px solid #B43F3F;
+    border-radius: 16px;
+    max-width: 620px;
+    width: 100%;
+    padding: 36px 28px;
+    text-align: center;
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7);
+}
+
+/* Foto Profil */
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 5px solid #B43F3F; /* Aksen warna cyan/biru terang */
+    padding: 3px;
+    background-color: #F8EDED;
+    margin-bottom: 3px;
+}
+
+/* Nama */
+#nama {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #B43F3F;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+/* Informasi (NIM & Prodi) */
+.info {
+    font-size: 1.2rem;
+    color: #173B45;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Garis pemisah opsional sebelum deskripsi */
+.info:last-of-type {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #334155;
+}
+
+/* Teks Deskripsi Panjang */
+.deskripsi {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #173B45;
+    text-align: justify; /* Supaya teks panjang tampak rapi rata kanan-kiri */
+    white-space: pre-line; /* Menjaga jeda antar paragraf dari HTML */
+}
